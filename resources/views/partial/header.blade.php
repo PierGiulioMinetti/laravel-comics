@@ -1,6 +1,6 @@
 <header>
     <div class="container d-flex  align-centr">
-        <a href="/" class="navbar-brand">
+        <a href="/" class="navbar-brand"  href="{{ route('home') }}" >
             <img src="{{asset('images/logo.png') }}" alt="DC logo">
         </a>
 

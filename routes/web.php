@@ -13,12 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+// METODO A
 
-    $comics = config('comics');
-    // dd($comics);
-    // compact è l'equivalente di  'comics'=> $comics
-   
+// Route::get('/', function () {
 
-    return view('home', compact('comics'));
-});
+//     $comics = config('comics');
+//     // dd($comics);
+//     // compact è l'equivalente di  'comics'=> $comics
+    
+
+//     return view('home', compact('comics'));
+// })->name('home');
+
+// *****************
+// METODO B
+
+// HOMEPAGE
+Route::get('/', 'HomeController@index')->name('home');
+
+// COMIC DETAIL
+Route::get('/comic/{id}', 'ComicController@show')->name('comic-detail');
