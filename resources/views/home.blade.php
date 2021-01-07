@@ -8,7 +8,18 @@
         </section>
         <section class="comics">
             <div class="container-comics">
-                lista comics
+                <ul class="comic-list">
+                    @foreach ($comics as $comic)
+                    <li class="list-none">
+                        <a href="">
+                            <img src="{{ $comic['image']}}" alt="">
+                            <h3>
+                                {{ $comic['title']}}
+                            </h3>
+                        </a>
+                    </li>
+                    @endforeach
+                </ul>
             </div>
         </section>
    </main>

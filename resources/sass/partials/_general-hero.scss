@@ -1,5 +1,15 @@
-.container-hero{
-    height: 390px;
-    background-image: url('../images/bg-hero-home.jpg');
-    background-size: cover;
+.general-hero{
+
+    
+    .container-hero{
+        height: 390px;
+        background-image: url('../images/bg-hero-home.jpg');
+        background-size: cover;
+        
+    }
+    .comic-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 1em;
+    }
 }
