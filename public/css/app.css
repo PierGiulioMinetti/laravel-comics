@@ -1,5 +1,14 @@
+body {
+  background-color: #141858;
+  color: white;
+}
+
 h1 {
-  color: red;
+  color: white;
+}
+
+ul li a {
+  color: white;
 }
 
 .d-flex {
