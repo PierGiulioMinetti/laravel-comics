@@ -20,9 +20,9 @@ class ComicController extends Controller
         $comic = [];
         foreach($comics as $item) {
             if($id == $item['id']){
-                $comic[] = $item;
+                $comic = $item;
             }
         }
         return view('comics.show', compact('comic'));
     }
-};
+}
