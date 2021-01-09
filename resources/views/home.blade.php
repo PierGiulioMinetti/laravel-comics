@@ -4,7 +4,7 @@
 
    <main class="general-hero">
         <section class="container-hero">
-            <img src="{{ asset('images/cover-home.jpg')}}" alt="">
+            <img class="comic-image" src="{{ asset('images/cover-home.jpg')}}" alt="">
         </section>
         <section class="comics">
             <div class="container-comics">
@@ -12,7 +12,7 @@
                     @foreach ($comics as $comic)
                     <li class="list-none">
                         <a href="{{ route('comic-detail', $comic['id']) }}">
-                            <img src="{{ $comic['image']}}" alt="">
+                            <img  src="{{ $comic['image']}}" alt=" {{ $comic['title']}}">
                             <h3>
                                 {{ $comic['title']}}
                             </h3>

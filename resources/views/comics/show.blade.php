@@ -3,8 +3,8 @@
 @section('contenuto')
 
    <main class="general-hero">
-        <section class="container-hero" style="background-image: url({{ $comic['image-hero'] }})">
-            <img src="{{ $comic['image-cover'] }}" alt="{{ $comic['title'] }}">
+        <section class="container-hero " style="background-image: url({{ $comic['image-hero'] }})">
+            <img class="comic-image" src="{{ $comic['image-cover'] }}" alt="{{ $comic['title'] }}">
         </section>
 
         <section class="details">

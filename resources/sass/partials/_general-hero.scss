@@ -6,10 +6,17 @@
         background-image: url('../images/bg-hero-home.jpg');
         background-size: cover;
         
+        .comic-image{
+            border: 10px solid red;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
     }
     .comic-list{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         grid-gap: 1em;
+
     }
 }

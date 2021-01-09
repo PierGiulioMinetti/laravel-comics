@@ -37,8 +37,28 @@ ul li a {
   background-image: url("../images/bg-hero-home.jpg");
   background-size: cover;
 }
+.general-hero .container-hero .comic-image {
+  border: 10px solid red;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
 .general-hero .comic-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 1em;
+}
+
+.header .navbar-nav {
+  text-transform: uppercase;
+}
+.header .navbar-nav ul li a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+.header .navbar-nav ul li a:hover {
+  color: #61f300;
+}
+.header .navbar-nav .img-logo {
+  margin: 20px 0;
 }
