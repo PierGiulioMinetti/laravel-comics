@@ -63,9 +63,10 @@
                         News
                     </a>
                 </li>
-                <li>
-                    <a href="">
+                <li >
+                    <a   href="">
                         Shop
+                        
                     </a>
                 </li>
                 <div class="search-header d-flex">
