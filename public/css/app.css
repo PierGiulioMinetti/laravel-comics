@@ -92,12 +92,22 @@ footer .footer-hero-container {
   background-image: url("../images/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  position: relative;
+  overflow-y: hidden;
 }
 footer .footer-hero-container .container-hero-1300 {
-  max-width: 1300px;
+  max-width: 500px;
   border: 1px solid red;
-  margin: auto;
+  margin: 50px 0 50px 200px;
+}
+footer .footer-hero-container .container-hero-1300 .sites-content {
+  max-width: 600px;
+}
+footer .footer-hero-container .container-hero-1300 .footer-image {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 footer .footer-hero-container .container-hero-1300 .footer-list {
   flex-wrap: wrap;
@@ -113,4 +123,5 @@ footer .footer-hero-container .container-hero-1300 .footer-list ul li {
 footer .footer-hero-container .container-hero-1300 .footer-list .move-up {
   position: relative;
   bottom: 30px;
+  position: relative;
 }
