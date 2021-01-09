@@ -1,6 +1,9 @@
 body {
   background-color: #141858;
   color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -49,16 +52,38 @@ ul li a {
   grid-gap: 1em;
 }
 
-.header .navbar-nav {
+header .blu-bar-header {
+  background-color: #0c7cec;
+  justify-content: flex-end;
+  padding: 5px 20px;
+}
+header .blu-bar-header .dc-power,
+header .blu-bar-header .additional {
+  margin-right: 30px;
+}
+header .img-logo {
+  margin: 20px 0;
+}
+header .navbar-nav {
   text-transform: uppercase;
 }
-.header .navbar-nav ul li a {
+header .navbar-nav ul .search-header {
+  margin-left: 10px;
+  text-transform: capitalize;
+  border-bottom: 2px solid #0c7cec;
+  padding: 0 15px 5px 20px;
+}
+header .navbar-nav ul .search-header .fa-search {
+  font-size: smaller;
+  margin-left: 7px;
+  position: relative;
+  top: 2px;
+}
+header .navbar-nav ul li a {
   text-decoration: none;
   margin: 0 10px;
+  font-size: large;
 }
-.header .navbar-nav ul li a:hover {
-  color: #61f300;
-}
-.header .navbar-nav .img-logo {
-  margin: 20px 0;
+header .navbar-nav ul li a:hover {
+  color: #0071f3;
 }

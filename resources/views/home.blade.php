@@ -7,7 +7,7 @@
             <img class="comic-image" src="{{ asset('images/cover-home.jpg')}}" alt="">
         </section>
         <section class="comics">
-            <div class="container-comics">
+            <div class="container container-comics">
                 <ul class="comic-list">
                     @foreach ($comics as $comic)
                     <li class="list-none">
