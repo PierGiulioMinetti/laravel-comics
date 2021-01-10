@@ -2,6 +2,7 @@
 
     
     .container-hero{
+  
         height: 390px;
         background-image: url('../images/bg-hero-home.jpg');
         background-size: cover;
@@ -12,11 +13,49 @@
             top: 20px;
             left: 20px;
         }
-    }
-    .comic-list{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-gap: 1em;
+
+        .current-series{
+            background-color: $blue-dc;
+            padding: 10px 0;
+            width: 212px;
+            text-align: center;
+            position: relative;
+            top: 17px;
+            left: 20px;
+            font-weight: 800;
+            font-family: sans-serif;
+            }
+
+        .blue-bar{
+            height: 38px;
+            background-color: $blue-dc;
+        }
+
+        }
 
     }
-}
+
+    .container-comics{
+        position: relative;
+
+        .comic-list{
+            padding: 30px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 1em;
+        }
+        
+        .load-more{
+            background-color: $blue-dc;
+            padding: 10px 20px;
+            width: 150px;
+            text-align: center;
+            font-weight: 800;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            bottom: 0;
+            margin: 20px 0;
+        }
+    }
