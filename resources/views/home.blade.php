@@ -29,6 +29,18 @@
                 <div class="load-more">
                     LOAD MORE
                 </div>
+                <div class="container-merchandise">
+                    <div class="merchandise-section d-flex">
+                        <img src="{{asset('images/digital-comics.png')}}" alt="digital-comics">
+                        <img src="{{asset('images/merchandise.png')}}" alt="merchandise">
+                        <img src="{{asset('images/subscriptions.png')}}" alt="subscriptions">
+                        <img src="{{asset('images/shop-locator.png')}}" alt="shop-locator">
+                        <img src="{{asset('images/power-visa.svg')}}" alt="power-visa">
+                    </div>
+                </div>
+                <div class="white-bar">
+
+                </div>
             </div>
         </section>
    </main>

@@ -35,27 +35,50 @@
 
     }
 
-    .container-comics{
-        position: relative;
+    .comics{
 
-        .comic-list{
-            padding: 30px 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            grid-gap: 1em;
-        }
+        background-color: #1c1c1c;
+
+        .container-comics{
+            position: relative;
+            background-color: #1c1c1c;
+    
+            .comic-list{
+                padding: 30px 0;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                grid-gap: 1em;
+            }
+            
+            .load-more{
+                background-color: $blue-dc;
+                padding: 10px 20px;
+                width: 150px;
+                text-align: center;
+                font-weight: 800;
+                z-index: 10;
+                margin: 20px auto;
+            }
+    
+            .container-merchandise{
+                width: 100%;
+                background-color: $blue-dc;
+    
+                .merchandise-section{
+                    // max-width: 1000px;
+                    margin: auto;
+                    justify-content: space-evenly;
+                    padding: 20px 0;
+                    background-color: $blue-dc;
+                    img{
+                        max-width: 50px;
+                        object-fit: scale-down;
+                    }
         
-        .load-more{
-            background-color: $blue-dc;
-            padding: 10px 20px;
-            width: 150px;
-            text-align: center;
-            font-weight: 800;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 10;
-            bottom: 0;
-            margin: 20px 0;
+                } 
+    
+            }
+    
         }
     }
+

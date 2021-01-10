@@ -8,10 +8,10 @@ footer{
         overflow-y: hidden;
 
         .container-hero-1300{
-            max-width: 500px;
-            border: 1px solid red;
-            
+            max-width: 550px;
+            // border: 1px solid red;
             margin: 50px 0 50px 200px;
+            font-size: smaller;
             
 
             .sites-content{
@@ -27,7 +27,7 @@ footer{
 
             .footer-list{
                 flex-wrap: wrap;
-                width: 300px;
+                // width: 300px;
 
                 ul h5{
                     margin: 10px 0;
@@ -50,4 +50,51 @@ footer{
         }
 
     }
+
+    .signup-bar{
+        padding: 30px;
+        background-color: #303030;
+        justify-content: space-between;
+        font-size: 20px;
+
+        .signup-button{
+            border: 3px solid $blue-dc;
+            padding: 10px;
+
+            &:hover{
+                    cursor: pointer;
+                    transform: scale(1.1);
+                    color: white;
+                    // transition: 0.1s transform linear;
+            }
+        }
+
+        .social-footer{
+
+            .follow-us{
+                color: $blue-dc;
+                font-weight: 800;
+            }
+
+            i{
+                color: #303030;
+                background-color: #797979;
+                padding: 10px;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                border-radius: 50%;
+
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    color: white;
+                }
+            }
+
+        }
+
+    }
+
 }
